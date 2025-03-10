@@ -28,6 +28,29 @@
   console.log(true && false); //only true when both true in case of Logical AND operator
   console.log(true || false); //only false when both false (OR Operator)
   console.log(!true); //Not operator
-  </script>
+
+  if(6)   //6 behaves just like true
+  {
+    console.log('Truthy Hello');
+  }
+  if(0) //0 is a falsy value
+  {
+    console.log('Falsy Hello');
+  }
+  console.log('term' / 2); //NaN, it's also a falsy value
+  
+  let variable4;
+  console.log(variable4); //undefined, is also a falsy value
+
+  const result = true? 'truthy' : 'falsy'; //ternary operator 
+  console.log(result); //output is Truthy. Shortcut of if-else
+
+  const result1 = false? 'truthy' : 'falsy'; //ternary operator
+  console.log(result1); //output is falsy
+
+  false && console.log('Hello');  //Guard Operator
+  true && console.log('Heyyy'); // Shortcut of if statement
+  
+</script>
 </body>
 </html>
