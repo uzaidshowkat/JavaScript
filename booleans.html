@@ -51,6 +51,11 @@
   false && console.log('Hello');  //Guard Operator
   true && console.log('Heyyy'); // Shortcut of if statement
   
+  let currency = 'EUR' || 'USD';  //Default Operator(OR)
+  console.log(currency);  //Stops when LHS is truthy
+
+  currency = undefined || 'USD';  //Here, LHS is falsy
+  console.log(currency);  //So, it will move to RHS
 </script>
 </body>
 </html>
