@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Object Practice</title>
+</head>
+<body>
+  
+  <script>
+
+    const vehicle = { //created an object vehicle which wraps multiple values
+      name : 'Ntorq', // access these values by using properties(left side values(name))
+      price : 70000,
+    };
+    console.log(vehicle);
+    console.log(vehicle.name);  //Dot Notation
+    console.log(vehicle.price);
+    console.log(vehicle.name = 'Maruti');
+    console.log(vehicle);
+
+    vehicle.newProperty = 'test'; //Added another property in our object
+    console.log(vehicle);
+
+    delete vehicle.newProperty; //Deleted property
+    console.log(vehicle);
+
+    console.log(typeof vehicle);  //Displays that vehicle is an Object
+  </script>
+</body>
+</html>
