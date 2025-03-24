@@ -29,9 +29,39 @@
     {
       name :'Nokia',
       //delivery-time : '1day' // error bcx js thinks it is a calculation
-      
+      ['delivery-time'] : '1day',
+      'delivery-date' : '23feb', //Another way of writing bracket notation
+      rating: {   //Nested Object
+        stars : 5,
+        count : 54
+      },
+      fun : function function1()
+      {
+        console.log('Function inside object');
+      }
     }
-    console.log(products.name);
-  </script>
+    console.log(products.name); //Dot Notation used by default
+    console.log(products['delivery-time']); //Bracket Notation
+    console.log(products['delivery-date']);
+
+    console.log(products.rating);
+    products.fun();
+
+    console.log(JSON.stringify(products));  //converts js object into json 
+    console.log(typeof JSON.stringify(products));  //it results in string
+
+    const jsonString = JSON.stringify(products);
+    console.log(JSON.parse(jsonString));  //parse is a method used to convert json -> js object
+
+    /*JS has a feauture of Auto-Boxing
+    which enables a string to have methods
+    or properties */
+    console.log('Hello'.length);
+    console.log('hello'.toUpperCase());
+    console.log('HELLO'.toLowerCase());
+
+    //Objects are refernces
+
+</script>
 </body>
 </html>
