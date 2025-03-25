@@ -62,6 +62,44 @@
 
     //Objects are refernces
 
-</script>
+    const object1 = 
+    {
+      message : 'Hello'
+    };
+
+    const object2 = object1;
+    object1.message = 'Modified';
+    console.log(object1);
+    console.log(object2);
+
+    const object3 = 
+    {
+      message : 'Modified'
+    };
+
+    console.log(object1 === object2);
+    console.log(object1 === object3); //bcx we are only comparing references and not values
+    
+    //Destructuring is a way to take properties
+    //out of an object
+
+    const object4 = 
+    {
+      message : 'Good Job!',
+      price : 70
+    };
+    const {message, price} = object4; //Destructuring
+    console.log(message);
+    console.log(price);
+
+    //Shorthand Property
+    const object5 = 
+    {
+     // message : message,  //will substitue the value on message property
+      message       //will do the same thing as above
+    }
+    console.log(object5);
+    
+  </script>
 </body>
 </html>
